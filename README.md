@@ -1,4 +1,5 @@
 ## `imachi` 🌖
+Tiny image loader.
 
 Installation:
 ```bash
