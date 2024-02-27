@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progress() - Imachi Demo</title>
+</head>
+<body>
+  <img class="image" src="https://picsum.photos/id/1/100" alt="" />
+  <img class="image" src="https://picsum.photos/id/2/100" alt="" />
+  <img class="image" src="https://picsum.photos/id/3/100" alt="" />
+  <img class="image" src="https://picsum.photos/id/4/100" alt="" />
+  <img class="image" src="https://picsum.photos/id/5/100" alt="" />
+
+  <script type="module">
+    import {imachi} from "../../src/index.ts";
+
+const imagesLoaded = imachi(".image");
+
+imagesLoaded?.progress((event) => {
+  console.log(event);
+});
+  </script>
+</body>
+</html>
