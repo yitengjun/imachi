@@ -2,7 +2,9 @@
   "name": "imachi",
   "version": "0.1.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "types": "./dist/imachi.d.ts",
   "main": "./dist/imachi.umd.cjs",
   "module": "./dist/imachi.js",
