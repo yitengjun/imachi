@@ -1,0 +1,41 @@
+{
+  "name": "docs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write .",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .ts,.svelte",
+    "fix:eslint": "eslint --fix --ignore-path .gitignore . --ext .ts,.svelte",
+    "lint:stylelint": "stylelint --ignore-path .gitignore '**/*.{scss,svelte}'",
+    "fix:stylelint": "stylelint --fix --ignore-path .gitignore '**/*.{scss,svelte}'"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "@tsconfig/svelte": "^5.0.2",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "gsap": "^3.12.5",
+    "prettier": "^3.2.4",
+    "prettier-plugin-svelte": "^3.1.2",
+    "sass": "^1.70.0",
+    "stylelint": "^16.2.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^4.4.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "svelte": "^4.2.8",
+    "svelte-check": "^3.6.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "@fontsource/inconsolata": "^5.0.16",
+    "@fontsource/space-grotesk": "^5.0.16"
+  }
+}
