@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-html",
+    "stylelint-config-recess-order"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "customSyntax": "postcss-html",
+      "rules": {
+        "at-rule-no-unknown": [
+          true,
+          {
+            "ignoreAtRules": [
+              "include",
+              "mixin",
+              "each",
+              "use",
+              "function",
+              "forward",
+              "if",
+              "else",
+              "warn",
+              "return"
+            ]
+          }
+        ],
+        "at-rule-empty-line-before": "always",
+        "block-no-empty": null,
+        "color-hex-length": "short",
+        "color-no-invalid-hex": true,
+        "custom-property-pattern": null,
+        "no-descending-specificity": null,
+        "selector-class-pattern": null
+      }
+    }
+  ]
+}

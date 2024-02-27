@@ -1,0 +1,54 @@
+@use "../config/config" as v;
+
+:root {
+  --font-base: "Inconsolata", monospace;
+  --font-serif: "Space Grotesk", sans-serif;
+  --color-text: #1f1f1f;
+  --color-bg: #e2e2e2;
+  --color-border: rgb(0 0 0 / 25%);
+  --height-header: #{v.vh(156px)};
+  --height-footer: #{v.vh(100px)};
+  --height-th: #{v.vh(25px)};
+  --content-width-margin: #{v.vh(40px)};
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--font-base);
+  font-size: v.vh(16px);
+  line-height: 1;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+[data-col="1"] {
+  grid-column: 1 / span 1;
+}
+
+[data-col="2"] {
+  grid-column: 2 / span 7;
+}
+
+[data-col="3"] {
+  grid-column: 9 / span 1;
+}
+
+[data-col="4"] {
+  grid-column: 10 / span 1;
+}
+
+[data-col="5"] {
+  grid-column: 11 / span 1;
+}

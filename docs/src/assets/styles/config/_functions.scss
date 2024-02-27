@@ -1,0 +1,15 @@
+@use "sass:math";
+
+@function vh($px, $base: 1080px) {
+  $pxValue: $px;
+
+  @return math.div(strip-unit($pxValue), strip-unit($base)) * 100vh;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}
