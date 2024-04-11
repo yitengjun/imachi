@@ -28,7 +28,7 @@
     "@playwright/test": "^1.41.1",
     "happy-dom": "^12.10.3",
     "typescript": "^5.3.3",
-    "vite": "^5.0.12",
+    "vite": "^5.0.13",
     "vite-plugin-dts": "^3.7.2",
     "vitest": "^0.34.6"
   }
