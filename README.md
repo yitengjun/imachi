@@ -1,7 +1,9 @@
 ## `imachi` 🌖
 Tiny image loader.
 
-Installation:
+pnpm + Vite(library mode) + biome + Vitest + Playwright + release-please
+
+## Installation:
 ```bash
 # yarn
 yarn add -D imachi
@@ -11,12 +13,12 @@ npm install -D imachi
 pnpm i -D imachi
 ```
 
-Import:
+## Import:
 ```js
 import { imachi } from "imachi";
 ```
 
-Usage:
+## Usage:
 ```js
 const loader = imachi('img');
 
